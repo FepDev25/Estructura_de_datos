@@ -18,6 +18,20 @@ public class OrdenamientoObjetos {
         imprimirConMensaje(gatos,"Gatos Ordenados por nombre: ");
     }
     
+    public static void burbujaCompareTo(Gato[] gatos) {
+        int contador = 0;
+        for (int i = 0; i < gatos.length; i++) {
+            for (int j = i + 1; j < gatos.length; j++) {
+                if (gatos[i].compareTo(gatos[j]) > 0) {
+                    System.out.println("Intercambio: " + gatos[i].getNombre() + " es mayor que " + gatos[j].getNombre());
+                    Gato aux = gatos[i];
+                    gatos[i] = gatos[j];
+                    gatos[j] = aux;
+                    contador++;
+                }
+            }
+        }
+    }
     
     public static void burbujaEdad(Gato[] gatos) {
         int contador = 0;
@@ -49,20 +63,6 @@ public class OrdenamientoObjetos {
         }
     }
     
-    public static void burbujaCompareTo(Gato[] gatos) {
-        int contador = 0;
-        for (int i = 0; i < gatos.length; i++) {
-            for (int j = i + 1; j < gatos.length; j++) {
-                if (gatos[i].compareTo(gatos[j]) > 0) {
-                    System.out.println("Intercambio: " + gatos[i].getNombre() + " es mayor que " + gatos[j].getNombre());
-                    Gato aux = gatos[i];
-                    gatos[i] = gatos[j];
-                    gatos[j] = aux;
-                    contador++;
-                }
-            }
-        }
-    }
     
     public static void imprimirConMensaje(Gato[] gatos, String mensaje) {
         System.out.println(mensaje);
