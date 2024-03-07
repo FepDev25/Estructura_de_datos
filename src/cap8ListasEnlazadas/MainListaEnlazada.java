@@ -1,6 +1,8 @@
 package cap8ListasEnlazadas;
 
-public class ListasEnlazadas {
+import cap8ListasEnlazadas.enlacesimple.Lista;
+
+public class MainListaEnlazada {
     /*
     Una colección de elementos (denominados nodos) dispuestos uno a continuación de otro, cada uno de ellos 
     conectado al siguiente por un “enlace” o “referencia”.
@@ -16,7 +18,7 @@ public class ListasEnlazadas {
       directa (“adelante”) como inversa (“atrás”). */
     
     public static void main(String[] args) {
-        ListaEnlazada<Integer> numeros = new ListaEnlazada();
+        Lista<Integer> numeros = new Lista();
         numeros.agregarUltimo(4);
         numeros.agregarUltimo(2);
         numeros.agregarUltimo(1);

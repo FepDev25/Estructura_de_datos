@@ -1,4 +1,4 @@
-package cap8ListasEnlazadas;
+package cap8ListasEnlazadas.enlacesimple;
 
 public class Nodo <T>{
     T dato;

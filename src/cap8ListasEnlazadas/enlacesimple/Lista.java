@@ -1,10 +1,10 @@
-package cap8ListasEnlazadas;
+package cap8ListasEnlazadas.enlacesimple;
 
-public class ListaEnlazada<T> {
+public class Lista<T> {
 
     private Nodo primero;
 
-    public ListaEnlazada() {
+    public Lista() {
         this.primero = null;
     }
 
@@ -98,6 +98,7 @@ public class ListaEnlazada<T> {
     public void anular(){
         this.primero = null;
     }
+   
 
     public void imprimir() {
         Nodo aux = this.primero;
