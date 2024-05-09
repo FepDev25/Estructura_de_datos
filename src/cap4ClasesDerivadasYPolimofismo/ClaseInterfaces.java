@@ -1,6 +1,6 @@
 package cap4ClasesDerivadasYPolimofismo;
 
-public class Interfaces {
+public class ClaseInterfaces {
     public static void main(String[] args) {
         Futbolista f1 =  new Futbolista("Felipe", "Chelsea FC",
                 13,"Keto",0,0);

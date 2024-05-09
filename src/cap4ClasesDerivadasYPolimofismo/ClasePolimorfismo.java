@@ -1,6 +1,6 @@
 package cap4ClasesDerivadasYPolimofismo;
 
-public class Polimorfismo {
+public class ClasePolimorfismo {
     public static void main(String[] args) {
         Persona p1 = new Persona("Felipe");
         Persona p2 = new Persona("Marcos");
